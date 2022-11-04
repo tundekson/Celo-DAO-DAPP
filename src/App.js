@@ -10,7 +10,10 @@ const ERC20_DECIMALS = 18
 //const DaoContractAddress = "0x764354Ab0CDE955258aA7b6fE3C6718A868BA535"
 //const cUSDContractAddress = "0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1"
 
-const DaoContractAddress = "0x8c7bfbBfaFD09F336ffBfe36f83ddbe05eFdDFc1"
+//const DaoContractAddress = "0x8c7bfbBfaFD09F336ffBfe36f83ddbe05eFdDFc1"
+//const DaoContractAddress = "0x355DcfD93D158b21f269D3C31a42674631243A80";
+//const DaoContractAddress = "0xb8eD4E67f27e24d9487076651a4FdD3a5113202b";
+const DaoContractAddress = "0x0b8529A26A0BC08b593829D9991F7549135b9537";
 const cUSDContractAddress = "0x03e4CcA31f8B0264F3587e969771fE9a7f88415f"
 let kit
 
@@ -307,11 +310,14 @@ function App() {
 
   return (
     <div className="container">
+      
+
         <div className="alert alert-warning sticky-top mt-2" style={{zIndex:"5" }} role="alert">
           <span id="notification">Loading...</span>
         </div>
 
-      <h1 className="text-center">DAO</h1>
+      
+      <div style={{backgroundColor: 'GREEN', color: 'b'}}><h1 className="text-center">INVESTMENT DAPP</h1></div>
       <p>Account: {accounts[0]}</p>
       <p>Shares: {shares}</p>
       <p>Wallet Balance: {balance}</p>
@@ -320,7 +326,7 @@ function App() {
         <>
         <div className="row">
           <div className="col-sm-12">
-            <h2>Withdraw Funds</h2>
+            <div style={{backgroundColor: 'GREEN', color: 'white'}}><h2 className="text-left">Withdraw Funds</h2></div>
             <form onSubmit={e => withdrawFunds(e)}>
               <div className="form-group">
                 <label htmlFor="amount">Amount</label>
@@ -340,7 +346,7 @@ function App() {
 
       <div className="row">
         <div className="col-sm-12">
-          <h2>Contribute</h2>
+          <div style={{backgroundColor: 'GREEN', color: 'white'}}><h2 className="text-left">Contribute</h2></div>
           <form onSubmit={e => contribute(e)}>
             <div className="form-group">
               <label htmlFor="amount">Amount</label>
@@ -355,7 +361,7 @@ function App() {
 
       <div className="row">
         <div className="col-sm-12">
-          <h2>Redeem shares</h2>
+          <div style={{backgroundColor: 'GREEN', color: 'white'}}><h2 className="text-left">Redeem shares</h2></div>
           <form onSubmit={e => redeemShares(e)}>
             <div className="form-group">
               <label htmlFor="amount">Amount</label>
@@ -370,7 +376,7 @@ function App() {
 
       <div className="row">
         <div className="col-sm-12">
-          <h2>Transfer shares</h2>
+          <div style={{backgroundColor: 'GREEN', color: 'white'}}><h2 className="text-left">Transfer shares</h2></div>
           <form onSubmit={e => transferShares(e)}>
             <div className="form-group">
               <label htmlFor="amount">Amount</label>
@@ -389,7 +395,7 @@ function App() {
 
       <div className="row">
         <div className="col-sm-12">
-          <h2>Create proposal</h2>
+          <div style={{backgroundColor: 'GREEN', color: 'white'}}><h2 className="text-left">Create proposal</h2></div>
           <form onSubmit={e => createProposal(e)}>
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -412,7 +418,7 @@ function App() {
 
       <div className="row">
         <div className="col-sm-12">
-          <h2>Proposals</h2>
+          <div style={{backgroundColor: 'Green', color: 'WHITE'}}><h2 className="text-left">Proposals</h2></div>
           <table className="table">
             <thead>
               <tr>

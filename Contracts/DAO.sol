@@ -217,7 +217,9 @@ contract DAO {
             (proposal.votes / totalShares) * 100 >= quorum,
             "cannot execute proposal with votes # below quorum"
         );
+        //proposal.executed == true;
         _transferFunds(proposal.amount, proposal.recipient);
+        
     }
 
     function withdrawFunds(uint256 amount, address payable to)
@@ -251,3 +253,4 @@ contract DAO {
         _;
     }
 }
+
